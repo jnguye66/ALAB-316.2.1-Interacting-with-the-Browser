@@ -26,7 +26,12 @@ function guessingGame() {
         }
     }
     let results = document.createElement('p');
+    let displayTries = document.createElement('p');
+
     results.textContent = `Corrent Answer: ${randNum}`;
+    displayTries.textContent = `Tries: ${tries}`;
+
     document.body.appendChild(results);
+    document.body.appendChild(displayTries);
 }
 guessingGame();
